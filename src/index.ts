@@ -1,7 +1,5 @@
 type Test = number;
+const test: Test = 23;
+console.log(test);
 
-let test: Test = 123;
-const test1 = () => {
-  console.log('1233');
-};
 export const hello = 'World is great!';
