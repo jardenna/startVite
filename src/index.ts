@@ -1,6 +1,6 @@
 type Test = number;
 
-let test:Test = 123
+let test: Test = 123;
 const test1 = () => {
   console.log('123');
 };
