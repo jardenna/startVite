@@ -7,19 +7,10 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-.DS_Store
 node_modules
 dist
 dist-ssr
 *.local
-.vscode
-
-
-/keys
-
-request.rest
-.env
-
 
 # Editor directories and files
 .vscode/*
@@ -31,5 +22,3 @@ request.rest
 *.njsproj
 *.sln
 *.sw?
-
-

@@ -8,6 +8,9 @@
     "sourceMap": true,
     "declarationMap": true,
     "outDir": "dist",
-    "strict": true
-  }
+    "strict": true,
+    "jsx": "react-jsx"
+  },
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }
