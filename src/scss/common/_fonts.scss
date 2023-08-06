@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'primary-font';
+  font-family: 'neue_haas_grotesk_rg';
   src:
     url('fonts/nhaasgrotesktxpro-rg-webfont.woff2') format('woff2'),
     url('fonts/nhaasgrotesktxpro-rg-webfont.woff') format('woff');
@@ -24,6 +24,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 $font-primary: neue_haas_grotesk_disp55roman, sans-serif;
-$font-secondary: neue_haas_grotesk_text_proRg, sans-serif;
-$font-normal: poiret_oneregular, sans-serif;
+$font-primary-bold: neue_haas_grotesk_text_proRg, sans-serif;
+$font-secondary: poiret_oneregular, sans-serif;
