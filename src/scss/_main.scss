@@ -52,21 +52,4 @@ a {
     outline: var(--focus);
     border: none;
   }
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-.text-bold {
-  font-weight: 700;
-}
-
-form {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-svg {
-  width: 20px;
 }

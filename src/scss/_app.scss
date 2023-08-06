@@ -1,0 +1,50 @@
+.grid {
+  display: grid;
+  gap: 12px;
+
+  &.grid-col-6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+.box {
+  height: 200px;
+}
+
+.box1 {
+  background-color: $color-secondary;
+}
+.box2 {
+  background-color: $color-secondary-dark;
+}
+.box3 {
+  background-color: $color-secondary-darkest;
+}
+.box4 {
+  background-color: $color-secondary-light;
+}
+.box5 {
+  background-color: $color-secondary-lighter;
+}
+.box6 {
+  background-color: $color-secondary-lightest;
+}
+
+.box11 {
+  background-color: $color-gray;
+}
+.box12 {
+  background-color: $color-gray-base1;
+}
+.box13 {
+  background-color: $color-gray-base2;
+}
+.box14 {
+  background-color: $color-gray-base3;
+}
+.box15 {
+  background-color: $color-gray-base4;
+}
+.box16 {
+  background-color: $color-gray-base5;
+}

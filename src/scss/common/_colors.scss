@@ -6,8 +6,6 @@ $color-gray: #e1e1e1;
 $color-primary: #373737;
 $color-primary-text: #272726;
 
-$color-secondary: #174a40;
-
 $color-primary-btn: #175451;
 $color-primary-btn-hover: #464b5f;
 $color-info: #286176;
@@ -21,3 +19,16 @@ $color-secondary: $color-gray-light;
 
 // #D96500 // orange
 //  #CFD0D5 light gray
+$color-secondary: #a71b1b;
+$color-secondary-dark: darken($color-secondary, 10%);
+$color-secondary-darkest: darken($color-secondary, 20%);
+$color-secondary-lighter: lighten($color-secondary, 20%);
+$color-secondary-light: lighten($color-secondary, 10%);
+$color-secondary-lightest: lighten($color-secondary, 30%);
+
+$color-gray: #78727f;
+$color-gray-base1: darken($color-gray, 20%);
+$color-gray-base2: darken($color-gray, 30%);
+$color-gray-base3: lighten($color-gray, 30%);
+$color-gray-base4: lighten($color-gray, 40%);
+$color-gray-base5: lighten($color-gray, 50%);
