@@ -45,7 +45,7 @@
     "vite": "^4.4.8"
   },
   "lint-staged": {
-    "*.": "prettier --ignore unknown --write"
+    "*.{js,ts,css,scss}": "prettier --ignore unknown --write"
   },
   "dependencies": {
     "react": "^18.2.0",
