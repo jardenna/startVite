@@ -1,8 +1,8 @@
 {
-  "name": "webpack-setup",
+  "name": "vite-setup",
   "type": "module",
   "version": "1.0.0",
-  "description": "A webpack config including esLint/Prettier/airbnbEslint",
+  "description": "A Vite config including esLint/Prettier/airbnbEslint",
   "main": "src/index.js",
   "scripts": {
     "start": "vite --port 5000 --strictPort",
@@ -10,9 +10,8 @@
     "preview": "vite preview 5000 --strictPort",
     "prepare": "husky install",
     "format": "prettier --write .",
-    "lint": "eslint . --max-warnings 0 --report-unused-disable-directives",
-    "lint:fix": "npm run lint -- --fix",
-    "dev": "vite --port 5002 --strictPort"
+    "lint": "eslint . --max-warnings 0",
+    "lint:fix": "npm run lint -- --fix"
   },
   "keywords": [
     "TypeScript",
