@@ -1,4 +1,4 @@
-import { useState, useLayoutEffect, FC, ReactNode } from 'react';
+import { FC, ReactNode, useLayoutEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 
 function createWrapperAndAppendToBody(wrapperId: string) {
@@ -17,7 +17,7 @@ const Portal: FC<PortalProps> = ({
   wrapperId = 'react-portal-wrapper',
 }) => {
   const [wrapperElement, setWrapperElement] = useState<HTMLElement | null>(
-    null
+    null,
   );
 
   useLayoutEffect(() => {

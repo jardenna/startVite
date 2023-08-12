@@ -17,18 +17,41 @@ $color-primary-link: #464b5f;
 
 $color-secondary: $color-gray-light;
 
+$color-gray: #78727f;
+
 // #D96500 // orange
 //  #CFD0D5 light gray
-$color-secondary: #a71b1b;
-$color-secondary-dark: darken($color-secondary, 10%);
-$color-secondary-darkest: darken($color-secondary, 20%);
-$color-secondary-lighter: lighten($color-secondary, 20%);
-$color-secondary-light: lighten($color-secondary, 10%);
-$color-secondary-lightest: lighten($color-secondary, 30%);
+$color-secondary: #7b1414;
+$color-secondary-base1: lighten($color-secondary, 10%);
+$color-secondary-base2: lighten($color-secondary, 20%);
+$color-secondary-base3: lighten($color-secondary, 30%);
+$color-secondary-base4: lighten($color-secondary, 40%);
+$color-secondary-base5: lighten($color-secondary, 50%);
 
-$color-gray: #78727f;
-$color-gray-base1: darken($color-gray, 20%);
-$color-gray-base2: darken($color-gray, 30%);
-$color-gray-base3: lighten($color-gray, 30%);
-$color-gray-base4: lighten($color-gray, 40%);
-$color-gray-base5: lighten($color-gray, 50%);
+$color-gray-ligthen-base1: lighten($color-gray, 10%);
+$color-gray-ligthen-base2: lighten($color-gray, 20%);
+$color-gray-ligthen-base3: lighten($color-gray, 30%);
+$color-gray-ligthen-base4: lighten($color-gray, 40%);
+$color-gray-ligthen-base5: lighten($color-gray, 50%);
+
+$color-gray-darken-base1: darken($color-gray, 10%);
+$color-gray-darken-base2: darken($color-gray, 20%);
+$color-gray-darken-base3: darken($color-gray, 30%);
+$color-gray-darken-base4: darken($color-gray, 40%);
+$color-gray-darken-base5: darken($color-gray, 50%);
+
+// // Creates a more saturated color of color with an amount between 0% and 100%. The amount parameter increases the HSL saturation by that percent.
+// saturate(color, amount)
+$color-gray-saturate-base1: saturate($color-gray, 10%);
+$color-gray-saturate-base2: saturate($color-gray, 20%);
+$color-gray-saturate-base3: saturate($color-gray, 30%);
+$color-gray-saturate-base4: saturate($color-gray, 40%);
+$color-gray-saturate-base5: saturate($color-gray, 50%);
+
+// //  	Creates a less saturated color of color with an amount between 0% and 100%. The amount parameter decreases the HSL saturation by that percent.
+// desaturate(color, amount)(color, amount)
+$color-gray-desaturate-base1: desaturate($color-gray, 10%);
+$color-gray-desaturate-base2: desaturate($color-gray, 20%);
+$color-gray-desaturate-base3: desaturate($color-gray, 30%);
+$color-gray-desaturate-base4: desaturate($color-gray, 40%);
+$color-gray-desaturate-base5: desaturate($color-gray, 90%);
