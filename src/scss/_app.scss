@@ -1,14 +1,21 @@
 .grid {
   display: grid;
-  gap: 12px;
+  gap: 4px;
 
   &.grid-col-6 {
     grid-template-columns: repeat(6, 1fr);
   }
+  &.grid-col-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  &.grid-col-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .box {
-  height: 200px;
+  height: 78px;
+  margin-bottom: 4px;
 }
 
 .box1 {

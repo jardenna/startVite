@@ -13,24 +13,27 @@ ul {
 }
 
 html,
-body {
+body,
+#root {
   height: 100%;
-  width: 100%;
 }
-
 body {
   margin: 0;
   font-size: 16px;
   color: $color-primary;
 }
-
-@media (prefers-color-scheme: dark) {
-  html,
-  body {
-    background-color: #333333;
-    color: #f5f5f5;
-  }
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 20px;
 }
+.main-container {
+  margin: 0;
+  height: 100%;
+  display: grid;
+  grid-template-rows: max-content 1fr;
+}
+
 h1,
 h2 {
   margin: 0;
