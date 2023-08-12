@@ -28,6 +28,14 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'react/jsx-uses-react': 'off',
     'no-console': ['warn', { allow: ['info', 'error'] }],
+    'object-curly-newline': [
+      'error',
+      {
+        ObjectExpression: 'always',
+        ObjectPattern: { multiline: true },
+      },
+    ],
+
     'react-refresh/only-export-components': [
       'warn',
       { allowConstantExport: true },
