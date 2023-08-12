@@ -1,21 +1,7 @@
 $color-white: #ffffff;
 $color-black: #000000;
-$color-gray-light: #f5f6f6;
-$color-gray: #e1e1e1;
 
 $color-primary: #373737;
-$color-primary-text: #272726;
-
-$color-primary-btn: #175451;
-$color-primary-btn-hover: #464b5f;
-$color-info: #286176;
-$color-danger: #a71b1b;
-$color-danger-hover: #d20917;
-
-$color-primary-text: $color-black;
-$color-primary-link: #464b5f;
-
-$color-secondary: $color-gray-light;
 
 $color-gray: #78727f;
 
@@ -54,4 +40,4 @@ $color-gray-desaturate-base1: desaturate($color-gray, 10%);
 $color-gray-desaturate-base2: desaturate($color-gray, 20%);
 $color-gray-desaturate-base3: desaturate($color-gray, 30%);
 $color-gray-desaturate-base4: desaturate($color-gray, 40%);
-$color-gray-desaturate-base5: desaturate($color-gray, 90%);
+$color-gray-desaturate-base5: desaturate($color-gray, 50%);
