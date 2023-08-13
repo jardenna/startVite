@@ -1,4 +1,4 @@
-import Colors1 from './pages/Color1';
+import ColorPage from './pages/ColorPage';
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       </header>
       <div className="main">
         <main className="container">
-          <Colors1 />
+          <ColorPage />
         </main>
       </div>
       <footer>Footer</footer>
