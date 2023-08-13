@@ -2,12 +2,16 @@
   display: grid;
   gap: 4px;
 
-  &.grid-col-5 {
-    grid-template-columns: repeat(5, 1fr);
+  &.grid-col-4 {
+    grid-template-columns: repeat(4, 1fr);
   }
-  &.grid-col-3 {
-    grid-template-columns: repeat(3, 1fr);
+  &.grid-col-2 {
+    grid-template-columns: repeat(2, 1fr);
   }
+}
+
+.color-box-container {
+  gap: 20px;
 }
 
 .box {

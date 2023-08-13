@@ -23,6 +23,16 @@ $color-secondary-base6: lighten($color-secondary, 60%);
 $color-secondary-base7: lighten($color-secondary, 70%);
 $color-secondary-base8: lighten($color-secondary, 80%);
 
+// Ligthen tertiary
+$color-tertiary-base1: lighten($color-tertiary, 10%);
+$color-tertiary-base2: lighten($color-tertiary, 20%);
+$color-tertiary-base3: lighten($color-tertiary, 30%);
+$color-tertiary-base4: lighten($color-tertiary, 40%);
+$color-tertiary-base5: lighten($color-tertiary, 50%);
+$color-tertiary-base6: lighten($color-tertiary, 60%);
+$color-tertiary-base7: lighten($color-tertiary, 70%);
+$color-tertiary-base8: lighten($color-tertiary, 80%);
+
 // Ligthen Gray
 $color-gray-base1: lighten($color-gray, 10%);
 $color-gray-base2: lighten($color-gray, 20%);
@@ -32,3 +42,27 @@ $color-gray-base5: lighten($color-gray, 50%);
 $color-gray-base6: lighten($color-gray, 60%);
 $color-gray-base7: lighten($color-gray, 70%);
 $color-gray-base8: lighten($color-gray, 80%);
+
+// Ligthen Danger
+$color-danger-base1: lighten($color-danger, 20%);
+$color-danger-base2: lighten($color-danger, 30%);
+$color-danger-base3: lighten($color-danger, 40%);
+$color-danger-base4: lighten($color-danger, 70%);
+
+// Ligthen Warning
+$color-warning-base1: lighten($color-warning, 20%);
+$color-warning-base2: lighten($color-warning, 30%);
+$color-warning-base3: lighten($color-warning, 40%);
+$color-warning-base4: lighten($color-warning, 50%);
+
+// Ligthen Info
+$color-info-base1: lighten($color-info, 20%);
+$color-info-base2: lighten($color-info, 30%);
+$color-info-base3: lighten($color-info, 40%);
+$color-info-base4: lighten($color-info, 70%);
+
+// Ligthen Success
+$color-success-base1: lighten($color-success, 20%);
+$color-success-base2: lighten($color-success, 30%);
+$color-success-base3: lighten($color-success, 40%);
+$color-success-base4: lighten($color-success, 70%);
