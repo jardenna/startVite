@@ -1,25 +1,7 @@
+@import '../variables/color-variables';
+
 $color-white: #ffffff;
 $color-black: #000000;
-$color-primary: #182628;
-$color-secondary: #d96500;
-$color-gray: #2c2b2e;
-
-// #D96500 // orange
-
-// #59253a
-// #78244c
-// #0677a1
-// #2d4159
-
-// #1f2605
-// #182628
-// #17252a
-// #376e6f
-
-// #1f2833
-
-// #25274d
-// #e98074
 
 // Ligthen Primary
 $color-primary-base1: lighten($color-primary, 10%);
