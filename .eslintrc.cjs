@@ -28,6 +28,7 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'react/jsx-uses-react': 'off',
     'no-console': ['warn', { allow: ['info', 'error'] }],
+    'react/jsx-one-expression-per-line': 0,
     'object-curly-newline': [
       'error',
       {
