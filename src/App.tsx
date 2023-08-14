@@ -1,4 +1,4 @@
-import ColorPage from './pages/ColorPage';
+import Toast from './pages/Toast';
 
 function App() {
   return (
@@ -8,7 +8,8 @@ function App() {
       </header>
       <div className="main">
         <main className="container">
-          <ColorPage />
+          <Toast />
+          {/* <ColorPage /> */}
         </main>
       </div>
       <footer>Footer</footer>
