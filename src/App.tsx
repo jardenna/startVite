@@ -1,4 +1,5 @@
-import Toast from './pages/Toast';
+import { RouterProvider } from 'react-router-dom';
+import router from './routes/routeConfig';
 
 function App() {
   return (
@@ -8,8 +9,10 @@ function App() {
       </header>
       <div className="main">
         <main className="container">
-          <Toast />
-          {/* <ColorPage /> */}
+          <RouterProvider
+            router={router}
+            fallbackElement={<p>Initial Load...</p>}
+          />
         </main>
       </div>
       <footer>Footer</footer>
