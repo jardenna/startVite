@@ -6,8 +6,7 @@ import {
   useNavigation,
 } from 'react-router-dom';
 
-interface LoginPageProps {}
-const LoginPage: FC<LoginPageProps> = () => {
+const LoginPage: FC = () => {
   const location = useLocation();
   const params = new URLSearchParams(location.search);
   const from = params.get('from') || '/';
@@ -19,13 +18,11 @@ const LoginPage: FC<LoginPageProps> = () => {
 
   return (
     <div>
-      <p>You must log in to view the page at {from}</p>
-
       <Form method="post" replace>
         <input type="hidden" name="redirectTo" value={from} />
         <label htmlFor="username">
           Username: <input name="username" id="username" />
-        </label>{' '}
+        </label>
         <button type="submit" disabled={isLoggingIn}>
           {isLoggingIn ? 'Logging in...' : 'Login'}
         </button>

@@ -8,7 +8,7 @@ const AuthStatus: FC<AuthStatusProps> = () => {
   const fetcher = useFetcher();
 
   if (!user) {
-    return <p>You are not logged in.</p>;
+    return <p>Login</p>;
   }
 
   const isLoggingOut = fetcher.formData != null;
