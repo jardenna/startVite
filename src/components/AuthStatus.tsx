@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { useFetcher, useRouteLoaderData } from 'react-router-dom';
+import { NavLink, useFetcher, useRouteLoaderData } from 'react-router-dom';
 
 interface AuthStatusProps {}
 const AuthStatus: FC<AuthStatusProps> = () => {
@@ -8,7 +8,7 @@ const AuthStatus: FC<AuthStatusProps> = () => {
   const fetcher = useFetcher();
 
   if (!user) {
-    return <p>Login</p>;
+    return <NavLink to="/login">Login</NavLink>;
   }
 
   const isLoggingOut = fetcher.formData != null;
