@@ -28,6 +28,7 @@
     "@typescript-eslint/eslint-plugin": "^6.2.1",
     "@typescript-eslint/parser": "^6.2.1",
     "@vitejs/plugin-react": "^4.0.4",
+    "autoprefixer": "^10.4.15",
     "eslint": "^8.46.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^17.1.0",
@@ -40,6 +41,7 @@
     "eslint-plugin-react-refresh": "^0.4.3",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.3",
+    "postcss": "^8.4.29",
     "prettier": "3.0.1",
     "sass": "^1.64.2",
     "typescript": "^5.1.6",
@@ -48,6 +50,9 @@
   "lint-staged": {
     "*.{js,ts,css,scss}": "prettier --ignore unknown --write"
   },
+  "browserslist": [
+    "defaults"
+  ],
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
