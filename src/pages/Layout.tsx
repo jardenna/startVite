@@ -1,6 +1,7 @@
 import { FC } from 'react';
-import { NavLink, Outlet } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 import AuthStatus from '../components/AuthStatus';
+import Nav from '../components/Nav';
 
 interface LayoutProps {}
 const Layout: FC<LayoutProps> = () => (
@@ -9,19 +10,7 @@ const Layout: FC<LayoutProps> = () => (
       <article className="container">
         <h1>Auth Example using RouterProvider</h1>
         <AuthStatus />
-        <nav>
-          <ul>
-            <li>
-              <NavLink to="/">Public Page</NavLink>
-            </li>
-            <li>
-              <NavLink to="/protected">Protected Page</NavLink>
-            </li>
-            <li>
-              <NavLink to="/colors">Colors</NavLink>
-            </li>
-          </ul>
-        </nav>
+        <Nav />
       </article>
     </header>
 

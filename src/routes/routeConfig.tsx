@@ -5,7 +5,6 @@ import {
   loginLoader,
   protectedLoader,
 } from '../auth/authFunctions';
-import ColorPage from '../pages/ColorPage';
 import Layout from '../pages/Layout';
 import LoginPage from '../pages/LoginPage';
 import ProtectedPage from '../pages/ProtectedPage';
@@ -37,11 +36,6 @@ const router = createBrowserRouter([
         path: 'protected',
         loader: protectedLoader,
         element: <ProtectedPage />,
-      },
-      {
-        path: 'colors',
-        loader: protectedLoader,
-        element: <ColorPage />,
       },
     ],
   },
