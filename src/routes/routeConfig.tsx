@@ -1,5 +1,5 @@
 import { createBrowserRouter, redirect } from 'react-router-dom';
-import fakeAuthProvider from '../auth';
+import fakeAuthProvider from '../auth/auth';
 import {
   loginAction,
   loginLoader,

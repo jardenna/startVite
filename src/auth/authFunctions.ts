@@ -1,5 +1,5 @@
 import { LoaderFunctionArgs, redirect } from 'react-router-dom';
-import fakeAuthProvider from '../auth';
+import fakeAuthProvider from './auth';
 
 export async function loginAction({ request }: LoaderFunctionArgs) {
   const formData = await request.formData();
