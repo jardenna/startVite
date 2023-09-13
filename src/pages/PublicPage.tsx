@@ -1,51 +1,31 @@
+/* eslint-disable object-curly-newline */
 /* eslint-disable function-paren-newline */
-/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable implicit-arrow-linebreak */
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
-/* eslint-disable @typescript-eslint/no-unsafe-call */
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
-/* eslint-disable @typescript-eslint/no-unsafe-return */
-import { FC, useState } from 'react';
+import React, { useState } from 'react';
 
-const PublicPage: FC = () => {
+interface ArrayItem {
+  transId: number;
+  fli: Array<{ opt: string; opt2: string }>;
+}
+
+const PublicPage: React.FC = () => {
   // Define your initial array
-  const initialArray = [
-    {
-      transId: 1,
-      fli: [
-        {
-          opt: '',
-          opt2: '',
-        },
-      ],
-    },
-    {
-      transId: 2,
-      fli: [
-        {
-          opt: '',
-          opt2: '',
-        },
-      ],
-    },
-    {
-      transId: 3,
-      fli: [
-        {
-          opt: '',
-          opt2: '',
-        },
-      ],
-    },
+  const initialArray: ArrayItem[] = [
+    { transId: 1, fli: [{ opt: '', opt2: '' }] },
+    { transId: 2, fli: [{ opt: '', opt2: '' }] },
+    { transId: 3, fli: [{ opt: '', opt2: '' }] },
   ];
 
   // State to hold the array
-  const [array, setArray] = useState<any>(initialArray);
+  const [array, setArray] = useState<ArrayItem[]>(initialArray);
 
   // Function to update the fli value for all items with the same transId
-  const updateFliForTransId = (transId: any, newValue: any) => {
-    setArray((prevArray: any) =>
-      prevArray.map((item: { transId: any }) => {
+  const updateFliForTransId = (
+    transId: number,
+    newValue: Array<{ opt: string; opt2: string }>,
+  ) => {
+    setArray((prevArray) =>
+      prevArray.map((item) => {
         if (item.transId === transId) {
           // Update the fli value for the matching transId
           return {
@@ -72,7 +52,7 @@ const PublicPage: FC = () => {
 
   return (
     <div>
-      {array.map((item: any) => (
+      {array.map((item) => (
         <div key={item.transId}>
           <p>Transaction ID: {item.transId}</p>
           <p>fli Value: {JSON.stringify(item.fli)}</p>
