@@ -15,7 +15,6 @@ import { Path } from '../types';
 const router = createBrowserRouter([
   {
     path: Path.Root,
-    element: <Layout />,
     errorElement: <ErrorPage />,
   },
   {

@@ -3,8 +3,7 @@ import { Outlet } from 'react-router-dom';
 import AuthStatus from '../components/AuthStatus';
 import Nav from '../components/Nav';
 
-interface LayoutProps {}
-const Layout: FC<LayoutProps> = () => (
+const Layout: FC = () => (
   <section className="main-container">
     <header className="header">
       <article className="container">
