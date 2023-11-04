@@ -5,12 +5,18 @@ import {
   loginLoader,
   protectedLoader,
 } from '../auth/authFunctions';
+import ErrorPage from '../pages/ErrorPage';
 import Layout from '../pages/Layout';
 import LoginPage from '../pages/LoginPage';
 import ProtectedPage from '../pages/ProtectedPage';
 import PublicPage from '../pages/PublicPage';
 
 const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Layout />,
+    errorElement: <ErrorPage />,
+  },
   {
     id: 'root',
     path: '/',
