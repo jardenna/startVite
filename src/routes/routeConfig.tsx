@@ -10,16 +10,17 @@ import Layout from '../pages/Layout';
 import LoginPage from '../pages/LoginPage';
 import ProtectedPage from '../pages/ProtectedPage';
 import PublicPage from '../pages/PublicPage';
+import { Path } from '../types';
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: Path.Root,
     element: <Layout />,
     errorElement: <ErrorPage />,
   },
   {
     id: 'root',
-    path: '/',
+    path: Path.Root,
     loader() {
       // Our root route always provides the user, if logged in
       return {
@@ -33,20 +34,20 @@ const router = createBrowserRouter([
         element: <PublicPage />,
       },
       {
-        path: 'login',
+        path: Path.Login,
         action: loginAction,
         loader: loginLoader,
         element: <LoginPage />,
       },
       {
-        path: 'protected',
+        path: Path.Protected,
         loader: protectedLoader,
         element: <ProtectedPage />,
       },
     ],
   },
   {
-    path: '/logout',
+    path: Path.Logout,
     async action() {
       // We signout in a "resource route" that we can hit from a fetcher.Form
       await fakeAuthProvider.signout();

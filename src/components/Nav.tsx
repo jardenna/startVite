@@ -1,14 +1,15 @@
 import { FC } from 'react';
 import { NavLink } from 'react-router-dom';
+import { Path } from '../types';
 
 const Nav: FC = () => (
   <nav>
     <ul>
       <li>
-        <NavLink to="/">Public Page</NavLink>
+        <NavLink to={Path.Root}>Public Page</NavLink>
       </li>
       <li>
-        <NavLink to="/protected">Protected Page</NavLink>
+        <NavLink to={Path.Protected}>Protected Page</NavLink>
       </li>
     </ul>
   </nav>
