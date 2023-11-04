@@ -1,4 +1,4 @@
-dist/
+build/
 *.js
 vite.config.ts
 .*.cjs
