@@ -5,8 +5,7 @@ import {
   useRouteError,
 } from 'react-router-dom';
 
-interface ErrorPageProps {}
-const ErrorPage: FC<ErrorPageProps> = () => {
+const ErrorPage: FC = () => {
   const navigate = useNavigate();
   const error = useRouteError() as Error;
 
