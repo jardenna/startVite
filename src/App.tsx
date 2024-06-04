@@ -1,9 +1,9 @@
 import { FC } from 'react';
 
 const App: FC = () => (
-  <article className="main-container">
+  <main>
     <h1>App</h1>
-  </article>
+  </main>
 );
 
 export default App;
