@@ -35,4 +35,9 @@ module.exports = {
       { allowConstantExport: true },
     ],
   },
+
+  globals: {
+    JSX: true,
+  },
+  ignorePatterns: ['build'],
 };

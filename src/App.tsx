@@ -1,16 +1,9 @@
-import React from 'react';
-import { RouterProvider } from 'react-router-dom';
-import router from './routes/routeConfig';
+import { FC } from 'react';
 
-function App() {
-  return (
-    <React.StrictMode>
-      <RouterProvider
-        router={router}
-        fallbackElement={<p>Initial Load...</p>}
-      />
-    </React.StrictMode>
-  );
-}
+const App: FC = () => (
+  <article className="main-container">
+    <h1>App</h1>
+  </article>
+);
 
 export default App;
