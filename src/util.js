@@ -2,6 +2,6 @@
 
 const test = (a, b) => {
   if (a == b) {
-    return a + b;
+    a + b + 1;
   }
 };
