@@ -8,7 +8,7 @@
     "start": "vite --port 5000 --strictPort",
     "build": "tsc && vite build",
     "preview": "vite preview 5000 --strictPort",
-    "prepare": "husky install",
+    "prepare": "husky",
     "format": "prettier --write .",
     "lint": "eslint . --max-warnings 0",
     "lint:fix": "npm run lint -- --fix",
@@ -57,7 +57,10 @@
     "vite-plugin-minify": "^1.5.2"
   },
   "lint-staged": {
-    "*.{js,ts,css,scss}": "prettier --ignore unknown --write"
+    "*.{html, css, tsx, jsx, ts, js}": "prettier --write",
+    "*.tsx": [
+      "eslint"
+    ]
   },
   "browserslist": [
     "defaults"
