@@ -2,23 +2,17 @@ import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
 import checker from 'vite-plugin-checker';
 import eslint from 'vite-plugin-eslint';
+import { ViteMinifyPlugin } from 'vite-plugin-minify';
 
 export default defineConfig({
   plugins: [
     react(),
     checker({
       typescript: true,
-      overlay: {
-        initialIsOpen: false, // Disables overlay by default
-      },
     }),
-    eslint({
-      emitWarning: true,
-    }),
+    eslint(),
+    ViteMinifyPlugin({}),
   ],
-  server: {
-    port: 5000,
-  },
   css: {
     devSourcemap: true,
   },
