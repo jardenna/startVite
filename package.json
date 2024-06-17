@@ -57,6 +57,10 @@
     "vite-plugin-minify": "^1.5.2"
   },
   "lint-staged": {
+    "*.{css,scss}": [
+      "formatCommand",
+      "stylelintCommand"
+    ],
     "*.{html, css, tsx, jsx, ts, js}": "prettier --write",
     "*.tsx": [
       "eslint"
