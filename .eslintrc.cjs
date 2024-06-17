@@ -20,36 +20,19 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: 'module',
   },
-  plugins: ['react', '@typescript-eslint', 'typescript-sort-keys', 'import'],
+  plugins: ['react', '@typescript-eslint', 'typescript-sort-keys'],
   rules: {
-    'import/order': [
-      'error',
-      {
-        groups: ['builtin', 'external', 'internal'],
-        pathGroups: [
-          {
-            pattern: '{react,react-dom/**}',
-            group: 'external',
-            position: 'before',
-          },
-        ],
-        pathGroupsExcludedImportTypes: ['react'],
-        'newlines-between': 'never',
-        alphabetize: {
-          order: 'asc',
-          caseInsensitive: true,
-        },
-      },
-    ],
     'typescript-sort-keys/string-enum': [
       'warn',
       'asc',
       { caseSensitive: true },
     ],
     '@typescript-eslint/no-unused-vars': 'warn',
+    '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-duplicate-enum-values': 'warn',
     '@typescript-eslint/no-empty-interface': 'warn',
     '@typescript-eslint/no-var-requires': 'off',
+    '@typescript-eslint/no-empty-interface': 'off',
 
     'import/no-extraneous-dependencies': [
       'error',
@@ -114,12 +97,25 @@ module.exports = {
     ],
     'import/prefer-default-export': 'warn',
     'jsx-a11y/click-events-have-key-events': 'off',
-    'jsx-a11y/no-static-element-interactions': 1,
-    'jsx-a11y/no-noninteractive-element-to-interactive-role': 1,
     'jsx-a11y/no-noninteractive-element-interactions': 'off',
-    'jsx-a11y/label-has-associated-control': 'off',
-    'jsx-a11y/control-has-associated-label': 1,
+    'jsx-a11y/html-has-lang': ['error'],
+    'jsx-a11y/img-redundant-alt': [
+      2,
+      {
+        components: ['Image'],
+        words: ['Bild', 'Foto'],
+      },
+    ],
     'jsx-a11y/no-autofocus': 'off',
+    'jsx-a11y/label-has-associated-control': [
+      'error',
+      {
+        labelComponents: ['Label'],
+        labelAttributes: ['for'],
+        controlComponents: ['Input'],
+        depth: 4,
+      },
+    ],
   },
 
   globals: {
