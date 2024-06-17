@@ -16,11 +16,14 @@
     "prepare": "husky"
   },
   "lint-staged": {
-    "*.{ts, tsx,js}": [
+    "*.{ts, tsx, js}": [
       "eslint"
     ],
     "*.{scss, css}": [
       "stylelint"
+    ],
+    "*": [
+      "prettier --write --ignore-unknown"
     ]
   },
   "keywords": [
