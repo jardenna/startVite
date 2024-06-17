@@ -18,6 +18,9 @@
   "lint-staged": {
     "*.{ts, tsx,js}": [
       "eslint"
+    ],
+    "*.{scss, css}": [
+      "stylelint"
     ]
   },
   "keywords": [
