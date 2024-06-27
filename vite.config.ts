@@ -11,6 +11,9 @@ export default defineConfig({
     }),
     eslint(),
   ],
+  server: {
+    port: 3000,
+  },
   css: {
     devSourcemap: true,
   },
