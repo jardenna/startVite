@@ -65,20 +65,5 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.24.1"
-  },
-  "stylelint": {
-    "extends": [
-      "stylelint-config-standard-scss"
-    ],
-    "rules": {
-      "custom-property-pattern": null,
-      "function-name-case": null,
-      "import-notation": null,
-      "keyframes-name-pattern": null,
-      "scss/at-function-pattern": null,
-      "scss/at-mixin-pattern": null,
-      "scss/dollar-variable-empty-line-before": null,
-      "selector-class-pattern": null
-    }
   }
 }
