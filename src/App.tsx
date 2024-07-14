@@ -1,17 +1,11 @@
 import { FC } from 'react';
 
 const App: FC = () => (
-  <article className="main-container">
-    <header>
-      <p>Header</p>
-    </header>
-    <main>
-      <p>Main</p>
-    </main>
-    <footer>
-      <p>Footer</p>
-    </footer>
-  </article>
+  <div className="main-container">
+    <header>Header</header>
+    <main>Main content</main>
+    <footer>Footer</footer>
+  </div>
 );
 
 export default App;
