@@ -22,6 +22,11 @@ module.exports = {
   },
   plugins: ['react', '@typescript-eslint', 'typescript-sort-keys'],
   rules: {
+    'typescript-sort-keys/interface': [
+      'warn',
+      'asc',
+      { caseSensitive: true, requiredFirst: true },
+    ],
     'typescript-sort-keys/string-enum': [
       'warn',
       'asc',
@@ -103,7 +108,7 @@ module.exports = {
       2,
       {
         components: ['Image'],
-        words: ['Bild', 'Foto'],
+        words: ['Bild', 'Foto', 'Billede'],
       },
     ],
     'jsx-a11y/no-autofocus': 'off',
