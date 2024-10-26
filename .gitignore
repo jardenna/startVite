@@ -7,20 +7,14 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-.DS_Store
 node_modules
+dist
 build
+dist-ssr
 *.local
-.vscode
-
-/keys
-
-request.rest
-.env
-
+.eslintcache
 
 # Editor directories and files
-.vscode/*
 !.vscode/extensions.json
 .idea
 .DS_Store
@@ -29,5 +23,3 @@ request.rest
 *.njsproj
 *.sln
 *.sw?
-
-
