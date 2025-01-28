@@ -2,9 +2,9 @@ import { FC } from 'react';
 
 const App: FC = () => (
   <div className="main-container">
-    <header>Header</header>
+    <header aria-label="primary">Header</header>
     <main>Main content</main>
-    <footer>Footer</footer>
+    <footer aria-label="primary">Footer</footer>
   </div>
 );
 
